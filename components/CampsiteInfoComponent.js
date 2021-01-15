@@ -143,7 +143,7 @@ class CampsiteInfo extends Component {
                     animationType={'slide'}
                     transparent={false}
                     visible={this.state.showModal}
-                    on_request_close={() => this.toggleModal()}
+                    onRequestClose={() => this.toggleModal()}
                 >
                     <View style={styles.modal}>
                         <Rating
