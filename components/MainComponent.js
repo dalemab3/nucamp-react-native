@@ -325,6 +325,11 @@ class Main extends Component {
         this.props.fetchPromotions();
         this.props.fetchPartners();
 
+        this.showNetInfo();
+
+    }
+
+    showNetInfo = async() => {
         NetInfo.fetch().then(connectionInfo => {
             (Platform.OS === 'ios')
                 ? Alert.alert('Initial Network Connectivity Type:', connectionInfo.type)
